@@ -7,7 +7,7 @@
   "author": "richard_lovell",
   "contributors": [],
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "node ./node_modules/gulp/bin/gulp.js watch"
   },
   "dependencies": {
   },

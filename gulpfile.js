@@ -5,9 +5,7 @@ var gulp = require('gulp'),
   minifycss = require('gulp-minify-css'),
   rename = require('gulp-rename'),
   sass = require('gulp-sass'),
-  concat = require('gulp-concat'),
-  livereload = require('gulp-livereload'),
-  wait = require('gulp-wait');
+  concat = require('gulp-concat');
 
 
 // Default error handler
