@@ -5,6 +5,7 @@ var gulp = require('gulp'),
   minifycss = require('gulp-minify-css'),
   rename = require('gulp-rename'),
   sass = require('gulp-sass'),
+  wait = require('gulp-wait')
   concat = require('gulp-concat');
 
 
@@ -19,6 +20,7 @@ var onError = function (err) {
 gulp.task('scss', function () {
   return gulp.src('stylesheets/main.scss')
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(wait(1500))
     .pipe(sass())
     .pipe(gulp.dest('./css'))
     .pipe(minifycss())

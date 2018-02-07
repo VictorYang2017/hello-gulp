@@ -10,6 +10,7 @@
     "gulp": "node ./node_modules/gulp/bin/gulp.js watch"
   },
   "dependencies": {
+    "gulp-wait": "0.0.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
